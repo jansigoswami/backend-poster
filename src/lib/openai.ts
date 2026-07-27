@@ -7,8 +7,8 @@ export const OPENAI_IMAGE_MODEL =
 
 let client: OpenAI | null = null
 
-// const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
 
 console.log("api key", OPENAI_API_KEY)
 
