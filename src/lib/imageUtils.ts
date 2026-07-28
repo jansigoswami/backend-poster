@@ -1,4 +1,4 @@
-const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"]
+const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp", "application/pdf"]
 
 export function isValidBase64(str: string): boolean {
   if (!str || str.length === 0) return false
@@ -30,7 +30,7 @@ export function validateImageFile(
   if (!ALLOWED_TYPES.includes(file.type)) {
     return {
       valid: false,
-      error: "Invalid file type. Please upload a JPEG, PNG, or WebP image.",
+      error: "Invalid file type. Please upload a JPEG, PNG, WebP, or PDF file.",
     }
   }
 

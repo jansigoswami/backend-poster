@@ -1,6 +1,6 @@
 import OpenAI from "openai"
 import dotenv from "dotenv"
-dotenv.config();
+dotenv.config({ path: '.env.local' });
 
 export const OPENAI_IMAGE_MODEL =
   process.env.OPENAI_MODEL ?? "gpt-5.4"
